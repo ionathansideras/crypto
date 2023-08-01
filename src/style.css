@@ -1,262 +1,264 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
-    font-family: roboto;
-    margin: 0;
+  font-family: roboto;
+  margin: 0;
 }
 main {
-    padding-top: 30px;
-    display: flex;
-   
-    align-items: center;
-    flex-direction: column;
-    min-height: 100vh;
+  padding-top: 30px;
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
 }
 .dis {
-    display: flex;
-    width: 80vw;
-    margin: 10px;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  width: 80vw;
+  margin: 10px;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .dis > p {
-    width: 239px;
-    min-width: 100px;
-    text-align: center;
+  width: 239px;
+  min-width: 100px;
+  text-align: center;
 }
 .rows {
-    display: flex;
-    width: 80vw;
-    margin: 10px;
-    justify-content: space-evenly;
-    align-items: center;
-    transition: all 0.2s;
-    box-Shadow: 0px 0px 2px 2px rgba(0,0,0, 0.3);
-
+  display: flex;
+  width: 80vw;
+  margin: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: all 0.2s;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.3);
 }
 .rows > p {
-    margin: 10px;
+  margin: 10px;
 }
 
 .img {
-    min-width: 40px;
-    height: 40px;
-    border-radius: 25px;
-    background-color: white;
-    margin: 10px;
+  min-width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: white;
+  margin: 10px;
 }
 .hour {
-    display: flex;
-    align-items: center;
-    width: 170px;
+  display: flex;
+  align-items: center;
+  width: 170px;
 }
 .hour > p {
-    margin: 10px;
+  margin: 10px;
 }
 
 .name {
-    width: 170px;
+  width: 170px;
 }
 
 .price {
-    width: 100px;
+  width: 100px;
 }
 .volume {
-    width: 260px;
+  width: 260px;
 }
 
 .load {
-    width: 200px;
-    height: 60px;
-    font-size: 20px;
-    color: white;
-    background-color: #3e3e42;
-    border: none;
-    box-Shadow: 0px 0px 2px 2px rgba(0,0,0, 0.3);
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  color: white;
+  background-color: #3e3e42;
+  border: none;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 .lds-ring {
-    display: inline-block;
-    position: relative;
-    width: 0px;
-    height: 0px;
+  display: inline-block;
+  position: relative;
+  width: 0px;
+  height: 0px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  visibility: hidden;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 18px;
+  border: 8px solid #848484;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #898989 transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
   }
-  .lds-ring div {
-    box-sizing: border-box;
-    display: block;
-    visibility: hidden;
-    position: absolute;
-    width: 64px;
-    height: 64px;
-    margin: 18px;
-    border: 8px solid #848484;
-    border-radius: 50%;
-    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-    border-color: #898989 transparent transparent transparent;
+  100% {
+    transform: rotate(360deg);
   }
-  .lds-ring div:nth-child(1) {
-    animation-delay: -0.45s;
-  }
-  .lds-ring div:nth-child(2) {
-    animation-delay: -0.3s;
-  }
-  .lds-ring div:nth-child(3) {
-    animation-delay: -0.15s;
-  }
-  @keyframes lds-ring {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  } 
+}
 
 .searchCurrency {
-    margin-top: 2px;
-    background-color:#d4d4d4;
-    color: #000000;
-    border-radius: 5px;
-    width: 300px;
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    flex-direction: column;
-    overflow-y: scroll;
-    max-height: 500px;
+  margin-top: 2px;
+  background-color: #d4d4d4;
+  color: #000000;
+  border-radius: 5px;
+  width: 300px;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  flex-direction: column;
+  overflow-y: scroll;
+  max-height: 500px;
 }
 
 .searchfield {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 80%;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 80%;
+  margin-bottom: 20px;
 }
 
 .inputSearch {
-    width: 70%;
-    height: 26px;
-    padding-left: 10px;
-    margin: 18px;
-    border: none;
-    border-radius: 5px;
-    box-Shadow: 0px 0px 2px 2px rgba(0,0,0, 0.3);
+  width: 70%;
+  height: 26px;
+  padding-left: 10px;
+  margin: 18px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 .div2 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 50%;
-    min-width: 200px;
-    margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  min-width: 200px;
+  margin-top: 20px;
 }
 .inputSearch:focus {
-    outline: none;
+  outline: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 .goUp {
-    width: 60px;
-    height: 60px;
-    object-fit: cover;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    margin-left: 20px;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 20px;
 }
 .act {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .graph {
-    width: 60%;
+  width: 60%;
 }
 
 .infoofcoin {
-    display: flex;
+  display: flex;
 }
 
 .displayinfo {
-    background-color:#3e3e42;
-    color: white;
-    width: 40%;
-    margin: 10px 0px 0px 10px;
-    border: white 1px solid;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+  background-color: #3e3e42;
+  color: white;
+  width: 40%;
+  margin: 10px 0px 0px 10px;
+  border: white 1px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .titlename > h1 {
-    color: white;
-    text-align: center;
+  color: white;
+  text-align: center;
 }
 
 .displayinfo > p {
-    width: 100%;
-    text-align: center;
-    margin: 0;
-    padding: 15px 0px 15px 0px;
-    border: white 1px solid;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 15px 0px 15px 0px;
+  border: white 1px solid;
 }
 
 .carousel {
-    width: 300px;
-    display: flex;
-    overflow-x: hidden;
+  width: 300px;
+  display: flex;
+  overflow-x: hidden;
 }
 .carousel > img {
-    width: 65px;
-    object-fit: cover;
-    margin-right: 10px;
+  width: 65px;
+  object-fit: cover;
+  margin-right: 10px;
 }
 .allstats {
-    height: 100vh;
-    padding: 0px 20px 0px 20px;
+  height: 100vh;
+  padding: 0px 20px 0px 20px;
 }
 .allstats > header > h1 {
-    margin-top: 0px;
-    padding-top: 20px;
+  margin-top: 0px;
+  padding-top: 20px;
 }
-.theme{
-    width: 30px;
-    height: 30px;
-    transition: all 0.4s ease;
-    cursor: pointer;
+.theme {
+  width: 30px;
+  height: 30px;
+  transition: all 0.4s ease;
+  cursor: pointer;
 }
 .theme:hover {
-    transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 @media (max-width: 700px) {
-    .infoofcoin {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .graph, .displayinfo {
-        width: 100%;
-        margin-top: 20px;
-    }
-    .volumeshow, .change1h, .volume {
-        display: none;
-    }
-    .hour{
-        justify-content: center;
-    }
-    .allstats {
-        height: 100vh;
-    }
+  .infoofcoin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .graph,
+  .displayinfo {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .volumeshow,
+  .change1h,
+  .volume {
+    display: none;
+  }
+  .hour {
+    justify-content: center;
+  }
+  .allstats {
+    height: 100vh;
+  }
 }
