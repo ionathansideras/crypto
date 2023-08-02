@@ -23,15 +23,17 @@ Chartjs.register(
 );
 
 export default function Ditails() {
-  const location = useLocation();
-  const { id } = location.state;
-  const [datacoin, setData] = useState([]);
+  const location = useLocation(); // React Router's useLocation hook to access state from the previous page
+  const { id } = location.state; // Extracting the "id" from the state
 
+  // States to store the coin data and color themes
+  const [datacoin, setData] = useState([]);
   const { backColor } = location.state;
   const { elColor } = location.state;
   const { background } = location.state;
 
   useEffect(() => {
+    // Fetch coin data using the provided "id"
     fetch(`https://api.coinlore.net/api/ticker/?id=${id}`)
       .then((response) => response.json())
       .then((all) => setData(all))
@@ -50,9 +52,9 @@ export default function Ditails() {
               +datacoin[0].percent_change_1h,
             ]
           : [],
-        backgroundColor: "red",
-        borderColor: "red",
-        pointBorderColor: "black",
+        backgroundColor: "red", // This color will be overridden by the "options" below
+        borderColor: "red", // This color will be overridden by the "options" below
+        pointBorderColor: "black", // This color will be overridden by the "options" below
       },
     ],
   };
@@ -76,7 +78,7 @@ export default function Ditails() {
       <header className="titlename">
         <h1
           style={{
-            color: elColor,
+            color: elColor, // Set the title color based on the theme
           }}
         >
           {datacoin.length ? datacoin[0].name : "Loading..."}
@@ -84,18 +86,20 @@ export default function Ditails() {
       </header>
       <div className="infoofcoin">
         <div className="graph">
+          {/* Display the line chart with the provided data and options */}
           <Line data={data} options={options}></Line>
         </div>
         {datacoin.map((e) => {
           return (
             <div
               style={{
-                backgroundColor: backColor,
-                color: elColor,
+                backgroundColor: backColor, // Set the background color based on the theme
+                color: elColor, // Set the text color based on the theme
               }}
               className="displayinfo"
               key={e.id}
             >
+              {/* Display various coin details */}
               <p style={{ border: `${elColor} 1px solid` }}>
                 {e.name} {e.symbol}
               </p>
@@ -107,7 +111,7 @@ export default function Ditails() {
               </p>
               <p style={{ border: `${elColor} 1px solid` }}>Rank: {e.rank}</p>
               <p style={{ border: `${elColor} 1px solid` }}>
-                Market cup USD: ${e.market_cap_usd}
+                Market cap USD: ${e.market_cap_usd}
               </p>
               <p style={{ border: `${elColor} 1px solid` }}>
                 Circulating Supply: {e.csupply}
