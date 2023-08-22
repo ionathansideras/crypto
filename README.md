@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Crypto Info Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Crypto Info Website project! This project showcases the use of JavaScript, React, CSS, REST APIs, Chart.js, and local storage to create a dynamic cryptocurrency information platform. Users can access real-time cryptocurrency values and prices, search for specific cryptocurrencies among a list of 100 different currencies, toggle between dark and light themes, and view charts with valuable insights about each currency.
 
-## Available Scripts
+## Technologies Used
 
-In the project directory, you can run:
+- JavaScript
+- React
+- CSS
+- REST APIs
+- Chart.js
 
-### `npm start`
+## Project Highlights
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This project boasts several exciting features:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Real-Time Crypto Info:** Utilizing REST APIs, users can instantly access real-time data on cryptocurrency values and prices.
 
-### `npm test`
+2. **Search Functionality:** The site includes a search bar that allows users to find information on their desired cryptocurrencies from a selection of 100 different currencies.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. **Theme Switching:** Users have the option to switch between a dark and light theme. The chosen theme is stored in local storage, providing a consistent experience across visits.
 
-### `npm run build`
+4. **Interactive Charts:** Users can click on a specific cryptocurrency to view an interactive chart that presents valuable insights and trends about the currency's performance.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. **Responsive Design:** The website is responsive, ensuring a seamless experience across various devices and screen sizes.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To get started with the project, follow these steps:
 
-### `npm run eject`
+1. Clone this repository to your local machine.
+2. Install the required dependencies using the package manager of your choice.
+3. Obtain API keys for the crypto data source and configure the API calls in the application.
+4. Set up the theme-switching functionality using local storage.
+5. Run the project using the provided scripts.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Dive into the source code to understand how cryptocurrency data is fetched, how the search functionality works, and how themes are managed using local storage.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The Crypto Info Website project provides users with real-time cryptocurrency data at their fingertips. Users can explore different cryptocurrencies, compare their values, and analyze trends through interactive charts. By examining the codebase, you can learn how to fetch data from REST APIs, implement dynamic search features, visualize data using Chart.js, and manage theme preferences using local storage.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+Thank you for exploring the Crypto Info Website project! If you have questions or feedback, don't hesitate to reach out.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+_Ionathan Sideras_
+_iona8ansideras@gmail.com_
